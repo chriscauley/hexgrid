@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@unrest/eslint-config": "^0.0.5",
     "@unrest/vue-form": "^0.0.13",
     "core-js": "^3.8.3",
     "vue": "^3.2.13"

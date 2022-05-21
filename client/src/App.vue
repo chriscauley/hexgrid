@@ -7,11 +7,13 @@ import HexGrid from './components/HexGrid.vue'
 
 export default {
   components: {
-    HexGrid
-  }
+    HexGrid,
+  },
 }
 </script>
 
 <style>
-  body { margin: 0 }
+body {
+  margin: 0;
+}
 </style>

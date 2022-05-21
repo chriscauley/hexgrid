@@ -5,5 +5,5 @@ module.exports = defineConfig({
     host: 'hexgrid.uberfordogs.com',
   },
   lintOnSave: false,
-  transpileDependencies: true
+  transpileDependencies: true,
 })
