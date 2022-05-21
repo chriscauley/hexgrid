@@ -15,5 +15,6 @@ export default {
 <style>
 body {
   margin: 0;
+  overflow-x: auto !important;
 }
 </style>

@@ -1293,6 +1293,11 @@
     eslint-plugin-vue "^7.0.0-0"
     prettier "^1.18.2"
 
+"@unrest/tailwind@^0.1.17":
+  version "0.1.17"
+  resolved "https://registry.yarnpkg.com/@unrest/tailwind/-/tailwind-0.1.17.tgz#b00c1735dad2f6b649a60002da6385c94afd4cad"
+  integrity sha512-4yekpG9jC+2dXfinMCbdX3e52g2pIe2CoaaOhJzfixvs/GoCB+/rg5hCB8S2WfMhJVF9wgjeqlFhphiRD6RUnQ==
+
 "@unrest/vue-form@^0.0.13":
   version "0.0.13"
   resolved "https://registry.yarnpkg.com/@unrest/vue-form/-/vue-form-0.0.13.tgz#e895a741efe5054b4df44df4faf302e86021f838"
@@ -1300,6 +1305,16 @@
   dependencies:
     jsonschema "^1.4.0"
     lodash.pick "^4.4.0"
+
+"@unrest/vue-storage@^0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@unrest/vue-storage/-/vue-storage-0.0.14.tgz#9f603cf4630a25c15936fd794e49c7d43860d69c"
+  integrity sha512-DjGHywmF8TzJAPIBAmu+BWLa5wdQOl6h836UUCzW3A7rXEqYxPXZn6dXlO3vliJqiswvTdV0V+MhDHuieLSu/Q==
+  dependencies:
+    axios "^0.21.1"
+    core-js "^3.6.5"
+    local-storage-json "^1.1.0"
+    lodash.debounce "^4.0.8"
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
   version "1.2.1"
@@ -1980,6 +1995,13 @@ autoprefixer@^10.2.4:
     picocolors "^1.0.0"
     postcss-value-parser "^4.2.0"
 
+axios@^0.21.1:
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
+  integrity sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==
+  dependencies:
+    follow-redirects "^1.14.0"
+
 babel-eslint@^10.1.0:
   version "10.1.0"
   resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-10.1.0.tgz#6968e568a910b78fb3779cdd8b6ac2f479943232"
@@ -2470,7 +2492,7 @@ core-js-compat@^3.21.0, core-js-compat@^3.22.1, core-js-compat@^3.8.3:
     browserslist "^4.20.3"
     semver "7.0.0"
 
-core-js@^3.8.3:
+core-js@^3.6.5, core-js@^3.8.3:
   version "3.22.5"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.22.5.tgz#a5f5a58e663d5c0ebb4e680cd7be37536fb2a9cf"
   integrity sha512-VP/xYuvJ0MJWRAobcmQ8F2H6Bsn+s7zqAAjFaHGBMc5AQm7zaelhD1LGduFn2EehEcQcU+br6t+fwbpQ5d1ZWA==
@@ -3310,7 +3332,7 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.5.tgz#76c8584f4fc843db64702a6bd04ab7a8bd666da3"
   integrity sha512-WIWGi2L3DyTUvUrwRKgGi9TwxQMUEqPOPQBVi71R96jZXJdFskXEmf54BoZaS1kknGODoIGASGEzBUYdyMCBJg==
 
-follow-redirects@^1.0.0:
+follow-redirects@^1.0.0, follow-redirects@^1.14.0:
   version "1.15.0"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.0.tgz#06441868281c86d0dda4ad8bdaead2d02dca89d4"
   integrity sha512-aExlJShTV4qOUOL7yF1U5tvLCB0xQuudbf6toyYA0E/acBNw71mvjFTnLaRp50aQaYocMR0a/RMMBIHeZnGyjQ==
@@ -3998,6 +4020,11 @@ loader-utils@^2.0.0:
     big.js "^5.2.2"
     emojis-list "^3.0.0"
     json5 "^2.1.2"
+
+local-storage-json@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/local-storage-json/-/local-storage-json-1.1.0.tgz#4a26763dee96d35c8089ac2df2546d621ca9a326"
+  integrity sha512-ZF7I5mKJ7yrirgCCrcfQeztWFOsD30rTNPlAnDkWx7CBewKd0PR65RSWkNvAK+id/7eprMBfmhVjzou/ByUZtw==
 
 locate-path@^5.0.0:
   version "5.0.0"
@@ -4965,6 +4992,11 @@ pump@^3.0.0:
     end-of-stream "^1.1.0"
     once "^1.3.1"
 
+punycode@1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.3.2.tgz#9653a036fb7c1ee42342f2325cceefea3926c48d"
+  integrity sha1-llOgNvt8HuQjQvIyXM7v6jkmxI0=
+
 punycode@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
@@ -4976,6 +5008,11 @@ qs@6.10.3:
   integrity sha512-wr7M2E0OFRfIfJZjKGieI8lBKb7fRCH4Fv5KNPEs7gJ8jadvotdsS08PzOKR7opXhZ/Xkjtt3WF9g38drmyRqQ==
   dependencies:
     side-channel "^1.0.4"
+
+querystring@0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/querystring/-/querystring-0.2.0.tgz#b209849203bb25df820da756e747005878521620"
+  integrity sha1-sgmEkgO7Jd+CDadW50cAWHhSFiA=
 
 queue-microtask@^1.2.2:
   version "1.2.3"
@@ -5816,6 +5853,14 @@ uri-js@^4.2.2:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
+
+url@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/url/-/url-0.11.0.tgz#3838e97cfc60521eb73c525a8e55bfdd9e2e28f1"
+  integrity sha1-ODjpfPxgUh63PFJajlW/3Z4uKPE=
+  dependencies:
+    punycode "1.3.2"
+    querystring "0.2.0"
 
 util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"

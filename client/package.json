@@ -5,12 +5,15 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "eslint \"src/**/*\""
   },
   "dependencies": {
     "@unrest/eslint-config": "^0.0.5",
+    "@unrest/tailwind": "^0.1.17",
     "@unrest/vue-form": "^0.0.13",
+    "@unrest/vue-storage": "^0.0.14",
     "core-js": "^3.8.3",
+    "url": "^0.11.0",
     "vue": "^3.2.13"
   },
   "devDependencies": {
