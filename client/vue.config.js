@@ -7,3 +7,8 @@ module.exports = defineConfig({
   lintOnSave: false,
   transpileDependencies: true,
 })
+
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports.publicPath = '/hexgrid/'
+}
