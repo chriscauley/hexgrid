@@ -6,7 +6,9 @@ const initial = {
   hex_radius: 0.8,
   space: 0.125,
   px_per_inch: 96,
+  layout: 'board',
 }
+
 export default {
   install(app) {
     const store = ReactiveLocalStorage({ LS_KEY, initial })
