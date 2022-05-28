@@ -15,6 +15,7 @@ const schema = {
     hex_radius: { type: 'string' },
     space: { type: 'string' },
     px_per_inch: { type: 'string' },
+    board_radius: { type: 'number' },
     layout: { type: 'string', enum: ['board', 'pieces'] },
   },
 }

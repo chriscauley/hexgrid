@@ -7,6 +7,7 @@ const initial = {
   space: 0.125,
   px_per_inch: 96,
   layout: 'board',
+  board_radius: 6,
 }
 
 export default {

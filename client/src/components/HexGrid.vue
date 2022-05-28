@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import { range } from 'lodash'
+import { range, sum } from 'lodash'
 import ParamsForm from './ParamsForm.vue'
 
 const a = 0.5
@@ -62,12 +62,22 @@ export default {
       return this.$local.state.layout === 'board'
     },
     rows() {
-      const pieces = 91
-      const r = 19
-      const c = Math.ceil(pieces / r)
-      return this.is_board
-        ? [1, 2, 3, 4, 5, 6, 5, 6, 5, 6, 5, 6, 5, 6, 5, 6, 5, 4, 3, 2, 1]
-        : range(r).map(() => c)
+      const { board_radius } = this.$local.state
+      const pieces = sum(range(board_radius).map((i) => i * 6))
+      if (!this.is_board) {
+        const r = 19
+        const c = Math.ceil(pieces / r)
+        return range(r).map(() => c)
+      }
+      const rows = range(1, board_radius + 1)
+      range(board_radius).map(() => {
+        rows.push(board_radius - 1)
+        rows.push(board_radius)
+      })
+      rows.pop()
+      range(2, board_radius + 1).map((i) => rows.push(board_radius - i))
+      rows.pop()
+      return rows
     },
     xys() {
       const { HEX_R, SPACE } = this.params
@@ -80,7 +90,10 @@ export default {
         if (!this.is_board) {
           x_offset = i_row % 2 ? dx / 2 : 0
         }
-        range(cols).map((col) => {
+        range(cols).map((col, i_col) => {
+          if (this.is_board && i_row === this.rows.length / 2 - 0.5 && i_col === cols / 2 - 0.5) {
+            return
+          }
           out.push([col * dx + x_offset, y_offset])
         })
         y_offset += b * HEX_R + SPACE
