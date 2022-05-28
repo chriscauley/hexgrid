@@ -81,12 +81,13 @@ export default {
     },
     xys() {
       const { HEX_R, SPACE } = this.params
+      const { board_radius } = this.$local.state
       // NOTE the 3.5 * SPACE is a guess :(
       const dx = 2 * HEX_R + 3.5 * SPACE + 2 * a * HEX_R
       const out = []
       let y_offset = this.is_board ? this.offset_y : 0
       this.rows.map((cols, i_row) => {
-        let x_offset = (dx * (6 - cols)) / 2 + this.offset_x
+        let x_offset = (dx * (board_radius - cols)) / 2 + this.offset_x
         if (!this.is_board) {
           x_offset = i_row % 2 ? dx / 2 : 0
         }
