@@ -17,6 +17,7 @@ const schema = {
     px_per_inch: { type: 'string' },
     board_radius: { type: 'number' },
     layout: { type: 'string', enum: ['board', 'pieces'] },
+    piece_rows: { type: 'number' },
   },
 }
 

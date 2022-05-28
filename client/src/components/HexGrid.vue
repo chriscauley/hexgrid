@@ -62,10 +62,10 @@ export default {
       return this.$local.state.layout === 'board'
     },
     rows() {
-      const { board_radius } = this.$local.state
+      const { board_radius, piece_rows } = this.$local.state
       const pieces = sum(range(board_radius).map((i) => i * 6))
       if (!this.is_board) {
-        const r = 19
+        const r = piece_rows
         const c = Math.ceil(pieces / r)
         return range(r).map(() => c)
       }
